@@ -15,10 +15,18 @@
 
 <script type="text/javascript">
 
-  var spec2 = "https://vherakaey.github.io/homeworkWeek9/choropleth_map.vg.json";
-  vegaEmbed('#choropleth_map', spec2).then(function(result) {
+  
+  var map = "https://vherakaey.github.io/assignment2/dot_map.vg.json";
+  var heatMap = "https://vherakaey.github.io/assignment2/heat_map.vg.json";
+  
+  vegaEmbed('#vis1', map, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
+  
+   vegaEmbed('#vis2', heatMap, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
 </script>
 
 </body>
