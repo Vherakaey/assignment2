@@ -1,6 +1,6 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "height": 500,
-  "width": 800,
+  "height": 300,
+  "width": 500,
   "title": "Global Temperature Anomalies",
   "data": {
     "url": "https://raw.githubusercontent.com/Vherakaey/assignment2/main/temperature_anomaly.csv"
