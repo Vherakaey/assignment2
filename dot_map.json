@@ -52,7 +52,7 @@
     "mark": { "type": "circle" ,"color":"#de2d26"},
     "encoding": { "size": {"field": "gisacres", "type": "quantitative", "scale":{"domain": [1000, 100000], "range":[1, 400], "clamp": true}},"tooltip": [
       {"field": "gisacres", "type": "quantitative"},
-      {"field": "state", "type": "nominal", "format": ","}] }
+      {"field": "state", "type": "nominal"}] }
     
     } ] 
 } ] 
