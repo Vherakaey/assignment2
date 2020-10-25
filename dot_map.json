@@ -1,0 +1,59 @@
+{
+"$schema": "https://vega.github.io/schema/vega-lite/v4.json", 
+
+"width": 1000, "height": 600, 
+
+"title": "Wildfires in America", 
+
+"projection": {"type": "equirectangular"}, 
+
+"params": [
+    {
+      "name": "Year_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          "2012",
+          "2013",
+          "2014",
+          "2015",
+          "2016",
+          "2017",
+          "2018"
+        ],
+        "labels":[
+          "2012",
+          "2013",
+          "2014",
+          "2015",
+          "2016",
+          "2017",
+          "2018"
+],
+        "name": "Year Selection: "
+      }
+} ],
+
+"layer": [ 
+    { "data": { "url": "https://raw.githubusercontent.com/haoyugan/FIT3179/main/testing/admin1-us.topojson",      "format": {"type": "topojson", "feature": "admin1-us"} }, "mark": {"type": "geoshape", "fill": "#ece7f2", "stroke": "#636363"} },
+
+
+{ "data": 
+    { "url": "https://raw.githubusercontent.com/Vherakaey/assignment2/main/test_map.csv" }, 
+
+"transform": 
+   [ {"filter": "datum.fireyear == Year_selection"}],
+
+
+"encoding": { "longitude": {"field": "X", "type": "quantitative"}, "latitude": {"field": "Y", "type": "quantitative"} },
+
+"layer": [ 
+  { 
+    "mark": { "type": "circle" ,"color":"#de2d26"},
+    "encoding": { "size": {"field": "gisacres", "type": "quantitative", "scale":{"domain": [1000, 100000], "range":[1, 400], "clamp": true}},"tooltip": [
+      {"field": "gisacres", "type": "quantitative"},
+      {"field": "state", "type": "nominal", "format": ","}] }
+    
+    } ] 
+} ] 
+}
