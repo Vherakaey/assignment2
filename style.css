@@ -1,0 +1,27 @@
+/* CSS styles */
+h1 {
+  font-family: Impact, sans-serif;
+  color: #CE5937;
+  font-size: 70;
+  text-align: center;
+  line-height:0.9;
+  column-span: all;
+  margin:0;
+ background-color: cornsilk;
+}
+
+h2 {
+ column-span: all;
+ background-color: cornsilk;
+ color: black;
+ padding: .5em;
+  margin:0;
+  text-align: center;
+
+
+  
+}
+
+
+
+}
