@@ -41,9 +41,8 @@
     {"filter": "datum.CO2Emissions > 0"}
     
     ],
-  
-  "mark": "circle", 
-    "encoding": { 
+
+  "encoding": { 
         "x": { 
           "field": "CO2Emissions", 
           "type": "quantitative", 
@@ -56,7 +55,12 @@
           "field": "HDI", 
           "type": "quantitative",
           "title": "Human Development Index"
-          }, 
+          }
+  },
+  "layer":[ {
+  "mark": "circle", 
+        "encoding":{
+
         "color": { 
           "field": "Continent",
           "type":"nominal",
@@ -70,32 +74,61 @@
           "Oceania" 
           ], 
           "range": 
-          [ "#35978f",
+          [ "#800000",
           "#74a9cf",
           "#8c6bb1",
           "#08589e",
-          "#fcbba1",
-          "#a8ddb5" ] }
+          "#ff8080",
+          "#99d8c9" ] }
           },
           "opacity": { "value": 0.7 },
           
-        "size": 
-        { "field": "Population", 
-        "type": "quantitative",
-        "scale": 
-          { "type": "threshold", 
-          "domain": [1000000, 10000000, 50000000, 100000000, 500000000],
-          "range": [50, 100, 300, 500, 600, 800] },
+        "size": { 
+          "field": "Population", 
+          "type": "quantitative",
+          "scale": { 
+              "type": "threshold", 
+              "domain": [1000000, 10000000, 50000000,
+              100000000, 500000000],
+              "range": [50, 100, 300, 500, 600, 800] 
+            },
           "legend": {"format": ".1s"}
-        },
+          },
         "tooltip": [ 
-          {"field": "CountryName", "type":"nominal"}, 
-          {"field": "CountryName", "type": "nominal"}, 
+          {"field": "CountryName", "type":"nominal"},
           {"field": "Continent", "type": "nominal"}, 
           {"field": "CO2Emissions", "type": "quantitative"},
           {"field": "HDI", "type": "quantitative"}
            ] 
       } 
 
+},
+  {
+    "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "dx": -12,
+        "fontSize": 11.5,
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "text": {"field": "CountryName", "type": "nominal"},
+        "color": {"value": "black"},
+        "opacity": {
+          "condition": {
+            "test": "datum['CountryName'] == 'China' || datum['CountryName'] == 'Malaysia' || datum['CountryName'] == 'Brazil' || datum['CountryName'] == 'India' || datum['CountryName'] == 'Cambodia' ||  datum['CountryName'] == 'United States'",
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "CountryName", "type":"nominal"},
+          {"field": "Continent", "type": "nominal"}, 
+          {"field": "CO2Emissions", "type": "quantitative"},
+          {"field": "HDI", "type": "quantitative"}
+        ]
+      }
+    }
+  ]
 }
-
