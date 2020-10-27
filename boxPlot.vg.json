@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "A vertical box plot showing median and lower and upper quartiles of the distribution of body mass of penguins.",
+  "height":600,
+  "width":400,
+  "title":"Percentage of Forest Area Change from 1990 to 2016",
+  "data": {
+    "url":"https://raw.githubusercontent.com/Vherakaey/assignment2/main/newnew.csv"
+    
+  },
+  "transform": [{"filter":"datum['Difference In Forest Area'] < 100"}],
+  
+  "layer":[{
+  "mark": "boxplot",
+  "encoding": {
+    "x": {"field": "Continent", "type": "nominal"},
+    "size":40,
+    "color": {"field": "Continent", "type": "nominal", "legend":
+    null,
+    "scale": 
+          { "domain": 
+          [ "North America", 
+          "South America", 
+          "Europe", 
+          "Africa", 
+          "Asia", 
+          "Oceania" 
+          ], 
+          "range": 
+          [ "#800000",
+          "#74a9cf",
+          "#8c6bb1",
+          "#08589e",
+          "#ff8080",
+          "#99d8c9" ] }
+        },
+    "y": {
+      "field": "Difference In Forest Area",
+      "type": "quantitative",
+      "scale": {"zero": false},
+      "axis":{"tickCount":3}
+    },
+    "tooltip":[{"field":"Country","type":"nominal"},
+              {"field":"Difference In Forest Area","type": "quantitative"}
+    
+    ]
+  }
+  },
+  
+  {
+    "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "bottom",
+        "dx": 20,
+        "fontSize": 11.5,
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "text": {"field": "Country", "type": "nominal"},
+        "color": {"value": "black"},
+        "opacity": {
+          "condition": {
+            "test": "datum['Country'] == 'Egypt' || datum['Country'] == 'Kuwait' || datum['Country'] == 'Ireland' || datum['Country'] == 'Kuwait' || datum['Country'] == 'Samoa' ||  datum['Country'] == 'Chile'",
+            "value": 1
+          },
+          "value": 0
+        },
+       "tooltip":[{"field":"Country","type":"nominal"},
+              {"field":"Difference In Forest Area","type": "quantitative"}
+    
+    ]
+      }
+    }
+  ]
+  
+}
