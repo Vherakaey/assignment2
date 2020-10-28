@@ -11,6 +11,10 @@ h1 {
   background-size: 100px 100px;
 }
 
+body{
+background-color: lightblue; !important
+}
+
 .testing {
   background-color: lightblue;
 }
