@@ -1,9 +1,5 @@
 * CSS styles */
 
-body {
-  background-color: #f6f4f3;
-  }
-
 h1 {
   font-family: Optima, sans-serif;
   color: darkslategray;
@@ -16,7 +12,7 @@ h1 {
 }
 
 .testing {
-  background-color: #c6cac9;
+  background-color: lightblue;
 }
 
 h2 {
