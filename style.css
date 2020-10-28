@@ -1,4 +1,4 @@
-/* CSS styles */
+* CSS styles */
 body {
   background-color: #f6f4f3;
   }
@@ -7,21 +7,23 @@ h1 {
   font-family: Optima, sans-serif;
   color: darkslategray;
   font-size: 35px;
-  top: 100px;
   text-align: center;
-  
+  padding: 0.5em;
   column-span: all;
-  top: 100px;
-  margin-bottom: 0px;
-  background-color: #b6cac5;
+  margin: 0;
+  background-size: 100px 100px;
+}
+
+.testing {
+  background-color: #c6cac9;
 }
 
 h2 {
+  
   font-family: Trebuchet, sans-serif;
   column-span: all;
   font-size: 20px;
-  background-color: #b6cac5;
-  line-height: 2;
+  line-height: 1;
   color: black;
   padding: 0.5em;
   margin: 0;
@@ -36,7 +38,7 @@ h3{
   font-weight: 100;
   column-span: all;
    margin: 0;
-  background-color: #b6cac5;
+  background-color: #c6cac5;
   
 }
 
@@ -45,6 +47,5 @@ p{
   font-size: 15px;
   font-weight: 100;
 }
-
 
 
