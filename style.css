@@ -48,4 +48,39 @@ p{
   font-weight: 100;
 }
 
+.t2{
+    width: 33.3333%;
+    display: inline-block;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+.t1{
+  letter-spacing: -.31em;
+    text-rendering: optimizespeed;
+    font-family: FreeSans,Arimo,"Droid Sans",Helvetica,Arial,sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.t3{
+  width: 55.6667%;
+  display: inline-block;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+  font-size: 15px;
+  
+}
+
+
 
