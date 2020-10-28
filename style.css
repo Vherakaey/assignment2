@@ -5,6 +5,9 @@
 body{
 background-color: lightblue; !important
 }
+.goshB{
+  background-color: lightblue;
+}
 .topTitle{
   text-align:center;
   margin: 0;
