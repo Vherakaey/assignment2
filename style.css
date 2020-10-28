@@ -5,8 +5,13 @@
 body{
 background-color: lightblue; !important
 }
+.topTitle{
+  text-align:center;
+  margin: 0;
+  background-size: 100px 100px;
+}
 
-.topTitle {
+h1{
   font-family: Optima, sans-serif;
   color: darkslategray;
   font-size: 35px;
