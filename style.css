@@ -1,5 +1,11 @@
 * CSS styles */
 
+
+
+body{
+background-color: lightblue; !important
+}
+
 h1 {
   font-family: Optima, sans-serif;
   color: darkslategray;
@@ -10,11 +16,6 @@ h1 {
   margin: 0;
   background-size: 100px 100px;
 }
-
-body{
-background-color: lightblue; !important
-}
-
 
 h2 {
   
