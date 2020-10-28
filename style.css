@@ -6,7 +6,7 @@ body{
 background-color: lightblue; !important
 }
 
-h1 {
+.topTitle {
   font-family: Optima, sans-serif;
   color: darkslategray;
   font-size: 35px;
