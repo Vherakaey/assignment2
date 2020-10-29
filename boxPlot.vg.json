@@ -50,28 +50,93 @@
   {
     "mark": {
         "type": "text",
-        "align": "right",
-        "baseline": "middle",
-        "dx": -12,
+        
+        "dx": -170,
+        "dy":-210,
         "fontSize": 11.5,
+        "color":"dimgray",
         "fontStyle": "italic"
       },
-      "encoding": {
-        "text": {"field": "Country", "type": "nominal"},
-        "color": {"value": "black"},
-        "opacity": {
-          "condition": {
-            "test": "datum['Country'] == 'Egypt' || datum['Country'] == 'Kuwait' || datum['Country'] == 'Ireland' || datum['Country'] == 'Kuwait' || datum['Country'] == 'Samoa' ||  datum['Country'] == 'Chile'",
-            "value": 1
-          },
-          "value": 0
-        },
-       "tooltip":[{"field":"CoUNtry","type":"nominal"},
-              {"field":"Difference In Forest Area","type": "quantitative"}
-    
-    ]
-      }
+      "transform": [{"filter": {"field": "Country", "equal": "Egypt"}}],
+      "encoding": {"text": {"field": "Country"}}
+      
+    },
+
+    {
+    "mark": {
+        "type": "text",
+        
+        "dx": -100,
+        "dy":-250,
+        "fontSize": 11.5,
+        "color":"dimgray",
+        "fontStyle": "italic"
+      },
+      "transform": [{"filter": {"field": "Country", "equal": "Kuwait"}}],
+      "encoding": {"text": {"field": "Country"}}
+      
+    },
+
+    {
+    "mark": {
+        "type": "text",
+        
+        "dx": -30,
+        "dy":-195,
+        "fontSize": 11.5,
+        "color":"dimgray",
+        "fontStyle": "italic"
+      },
+      "transform": [{"filter": {"field": "Country", "equal": "Ireland"}}],
+      "encoding": {"text": {"field": "Country"}}
+      
+    },
+    {
+    "mark": {
+        "type": "text",
+        
+        "dx": 40,
+        "dy":-260,
+        "fontSize": 11.5,
+        "color":"dimgray",
+        "fontStyle": "italic"
+      },
+      "transform": [{"filter": {"field": "Country", "equal": "Dominican Republic"}}],
+      "encoding": {"text": {"field": "Country"}}
+    },
+
+    {
+    "mark": {
+        "type": "text",
+        
+        "dx": 100,
+        "dy":-90,
+        "fontSize": 11.5,
+        "color":"dimgray",
+        "fontStyle": "italic"
+      },
+      "transform": [{"filter": {"field": "Country", "equal": "Samoa"}}],
+      "encoding": {"text": {"field": "Country"}}
+      
+    },
+    {
+    "mark": {
+        "type": "text",
+        
+        "dx": 165,
+        "dy":-45,
+        "fontSize": 11.5,
+        "color":"dimgray",
+        "fontStyle": "italic"
+      },
+      "transform": [{"filter": {"field": "Country", "equal": "Chile"}}],
+      "encoding": {"text": {"field": "Country"}}
+      
     }
+
+
+
+
   ]
   
 }
