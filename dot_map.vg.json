@@ -1,6 +1,6 @@
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v4.json", 
-"width": 600, "height": 400, 
+"width": 450, "height": 250, 
 "title": "Wildfires in America", 
 "background": "#f6f4f3",
 "projection": {"type": "equirectangular"}, 
