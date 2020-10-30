@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": "Global Ocean temperatures",
-  "height":400,
-  "width":400,
+  "height":300,
+  "width":500,
   "background": "#f6f4f3",
   "data": {"url": "https://raw.githubusercontent.com/Vherakaey/assignment2/main/sea_temp.csv"
   },
