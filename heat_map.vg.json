@@ -1,6 +1,6 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "height": 150,
-  "width": 250,
+  "height": 200,
+  "width": 350,
   "background": "#f6f4f3",
   "title": "Global Temperature Anomalies",
   "data": {
