@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "height":400,
-  "width":200,
+  "height":800,
+  "width":600,
   "background": "#f6f4f3",
   "title":"Percentage of Forest Area Change from 1990 to 2016",
   "data": {
