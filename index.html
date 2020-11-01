@@ -89,8 +89,8 @@ When it comes to fighting global warming, trees have emerged as one of the most 
       var map = "https://vherakaey.github.io/assignment2/dot_map.vg.json";
       var heatMap = "https://vherakaey.github.io/assignment2/heat_map.vg.json";
       var bubbleChart = "https://vherakaey.github.io/assignment2/bubbleChart.vg.json";
-      var sea_temp = "https://vherakaey.github.io/assignment2/sea_temp.vg.json";
       var box_plot = "https://vherakaey.github.io/assignment2/boxPlot.vg.json";
+      var line_bar = "https://vherakaey.github.io/assignment2/area_bar_chart.vg.json";
 
 
       vegaEmbed('#vis1', map, {
@@ -105,12 +105,6 @@ When it comes to fighting global warming, trees have emerged as one of the most 
         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
       }).catch(console.error);
 
-      vegaEmbed('#vis3', sea_temp, {
-        "actions": false
-      }).then(function(result) {
-        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-      }).catch(console.error);
-
       vegaEmbed('#vis4', bubbleChart, {
         "actions": false
       }).then(function(result) {
@@ -118,6 +112,12 @@ When it comes to fighting global warming, trees have emerged as one of the most 
       }).catch(console.error);
 
       vegaEmbed('#vis5', box_plot, {
+        "actions": false
+      }).then(function(result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+      }).catch(console.error);
+      
+      vegaEmbed('#vis6', line_bar, {
         "actions": false
       }).then(function(result) {
         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
