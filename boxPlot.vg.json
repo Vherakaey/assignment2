@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "height":600,
-  "width":400,
+  "height":500,
+  "width":300,
   "background": "#f6f4f3",
   "title":"Percentage of Forest Area Change from 1990 to 2016",
   "data": {
@@ -51,8 +51,8 @@
     "mark": {
         "type": "text",
         
-        "dx": -170,
-        "dy":-210,
+        "dx": -130,
+        "dy":-180,
         "fontSize": 11.5,
         "color":"dimgray",
         "fontStyle": "italic"
@@ -66,8 +66,8 @@
     "mark": {
         "type": "text",
         
-        "dx": -100,
-        "dy":-250,
+        "dx": -80,
+        "dy":-210,
         "fontSize": 11.5,
         "color":"dimgray",
         "fontStyle": "italic"
@@ -82,7 +82,7 @@
         "type": "text",
         
         "dx": -30,
-        "dy":-195,
+        "dy":-165,
         "fontSize": 11.5,
         "color":"dimgray",
         "fontStyle": "italic"
@@ -96,7 +96,7 @@
         "type": "text",
         
         "dx": 40,
-        "dy":-260,
+        "dy":-220,
         "fontSize": 11.5,
         "color":"dimgray",
         "fontStyle": "italic"
@@ -109,8 +109,8 @@
     "mark": {
         "type": "text",
         
-        "dx": 100,
-        "dy":-90,
+        "dx": 80,
+        "dy":-80,
         "fontSize": 11.5,
         "color":"dimgray",
         "fontStyle": "italic"
@@ -123,8 +123,8 @@
     "mark": {
         "type": "text",
         
-        "dx": 165,
-        "dy":-45,
+        "dx": 125,
+        "dy":-40,
         "fontSize": 11.5,
         "color":"dimgray",
         "fontStyle": "italic"
