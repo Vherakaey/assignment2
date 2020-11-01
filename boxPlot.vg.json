@@ -13,10 +13,15 @@
   "layer":[{
   "mark": "boxplot",
   "encoding": {
-    "x": {"field": "Continent", "type": "nominal"},
+    "x": {"field": "Continent", 
+          "type": "nominal",
+          "axis":{"title":null}
+          },
     "size":{"value":40},
-    "color": {"field": "Continent", "type": "nominal", "legend":
-    null,
+    "color": {
+      "field": "Continent",
+      "type": "nominal",
+      "legend":null,
     "scale": 
           { "domain": 
           [ "North America", 
