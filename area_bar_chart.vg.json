@@ -3,7 +3,7 @@
   "spacing": 40,
   "background": "#f6f4f3",
   "title":{"text":"Environmental Impacts of Different Types of Meat", "align": "center",
-  "anchor": "middle"},
+  "anchor": "middle","offset":30},
    "vconcat": [
      {
   "width": 300, "height": 200,
