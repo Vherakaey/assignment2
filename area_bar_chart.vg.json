@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-   "hconcat": [
+   "vconcat": [
      {
   "width": 300, "height": 200,
   "data": {"url": "https://raw.githubusercontent.com/Vherakaey/assignment2/main/protein.csv"},
@@ -69,7 +69,9 @@
     }  
    }
      },
+     
    {
+     "hconcat":[{
    "data": {
     "url": "https://raw.githubusercontent.com/Vherakaey/assignment2/main/barchart_meat.csv"
   },
@@ -97,7 +99,8 @@
             }
           ]
   }
-   },
+  }
+   ,
       {
    "data": {
     "url": "https://raw.githubusercontent.com/Vherakaey/assignment2/main/eutrophying.csv"
@@ -155,8 +158,9 @@
           
   }
    }
-  ]
+     ]
+   }
+   ]
+  
   
 }
-
-
