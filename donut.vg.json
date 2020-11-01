@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "background": "#f6f4f3",
   "description": "A  donut chart with embedded data.",
-  "title":"Percentage of Contribution to Greenhouse Gases by Each Sector",
+  "title":{"text":"Percentage of Contribution to Greenhouse Gases by Each Sector","offset": 40},
 
   "data": {
     "url": "https://raw.githubusercontent.com/Vherakaey/assignment2/main/donut.csv"
@@ -15,7 +15,7 @@
             "type": "nominal",
             "scale": {"range": ["#67a9cf", "#014636", "#abdda4", "#80cdc1", "#018571",
             "#a6bddb"]},
-            "legend": {"title": "Sector"}
+            "legend": {"title": "Sector","offset":20}
           },
            "tooltip": [
             {
