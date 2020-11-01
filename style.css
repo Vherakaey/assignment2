@@ -1,12 +1,8 @@
 * CSS styles */
 
 
-
-body{
-background-color: lightblue !important;
-}
-.goshB{
-  background-color: #f6f4f3;
+.backgroundColor{
+  background-color: #f6f4f3 !important;
 }
 .topTitle{
   margin-top: 24px;
@@ -14,7 +10,7 @@ background-color: lightblue !important;
   text-align: center;
   font-weight: bold;
   font-family: Optima, sans-serif;
-  font-size: 32px;
+  font-size: 38px;
   color: darkslategray;
 
 }
@@ -38,6 +34,7 @@ background-color: lightblue !important;
    margin-bottom: 16px;
    text-align: center;
    font-size: 16px;
+   font-weight: 70;
    font-family: Trebuchet, sans-serif;
 }
 
@@ -48,7 +45,7 @@ background-color: lightblue !important;
    font-family: Trebuchet, sans-serif;
    line-height: 4;
    background-color: #b6c9cd;
-   font-weight: 100;
+   font-weight: 70;
 }
 
 .first-map{
@@ -66,6 +63,7 @@ background-color: lightblue !important;
   margin-right: auto;
   text-align: center;
   margin-bottom: 32px;
+  font-weight: 70;
 }
 
 .description2{
@@ -75,6 +73,7 @@ background-color: lightblue !important;
   margin-right: auto;
   text-align: center;
   margin-bottom: 16px;
+  font-weight: 70;
 }
 
 .second-map{
@@ -89,7 +88,7 @@ background-color: lightblue !important;
    text-align: center;
    font-size: 20px;
    font-family: Trebuchet, sans-serif;
-   line-height: 3;
+   line-height: 4;
    background-color: #b6c9cd;
    font-weight: 100;
 }
@@ -109,8 +108,8 @@ background-color: lightblue !important;
   margin-left: auto;
   text-align: center;
   margin-bottom: 32px;
-  line-height: 3;
   font-size: 16px;
+  font-weight: 70;
 }
 
 .fourth-map{
@@ -132,6 +131,7 @@ background-color: lightblue !important;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  font-weight: 70;
   margin-bottom: 16px;
 }
 
@@ -141,5 +141,17 @@ background-color: lightblue !important;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  font-weight: 70;
+  margin-bottom: 40px;
+}
+
+.endingDescription{
+  width: 80%;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: 70;
+  font-size: 10px;
   margin-bottom: 40px;
 }
