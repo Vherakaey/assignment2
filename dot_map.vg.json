@@ -1,6 +1,6 @@
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v4.json", 
-"width": 450, "height": 250, 
+"width": 650, "height": 450, 
 "title": "Wildfires in America", 
 "background": "#f6f4f3",
 "projection": {"type": "equirectangular"}, 
@@ -43,8 +43,8 @@ null,
     { "data": { "url": "https://raw.githubusercontent.com/Vherakaey/assignment2/main/admin1-us.topojson",
 "format": {"type": "topojson", "feature": "admin1-us"} },
 "mark": {"type": "geoshape", 
-"fill": "black", 
-"stroke": "white"} },
+"fill": "aliceblue", 
+"stroke": "black"} },
 { "data": 
     { "url": "https://raw.githubusercontent.com/Vherakaey/assignment2/main/wildfire_map.csv" }, 
 "transform": 
@@ -74,12 +74,12 @@ null,
 "Extremely Severe" 
           ], 
 "range": 
-          [ "#ffffb2",
-"#fed976",
-"#feb24c",
-"#fd8d3c",
-"red",
-"#b10026"
+          [ "#bfd3e6",
+"#9ebcda",
+"#8c96c6",
+"#8c6bb1",
+"#88419d",
+"#6e016b"
  ] }
           },
 "opacity": { "value": 0.8 },
@@ -93,7 +93,9 @@ null,
         },
 "tooltip": [
       {"field": "Acres Burned", "type": "quantitative"},
-      {"field": "State", "type": "nominal"}] 
+      {"field": "State", "type": "nominal"},
+      {"field": "Category","title":"Category"},
+      {"field":"Incident Name"}] 
     }
     } ] 
 } ] 
