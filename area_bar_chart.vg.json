@@ -1,6 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "spacing": 40,
   "background": "#f6f4f3",
+  "title":{"text":"Environmental Impacts of Different Types of Meat", "align": "center",
+  "anchor": "middle"},
    "vconcat": [
      {
   "width": 300, "height": 200,
@@ -24,10 +27,12 @@
   "encoding": {
     "x": {
       "timeUnit": "year", "field": "Year",
-      "axis": {"format": "%Y"}
+      "axis": {"format": "%Y"},
+      "title":"Year"
     },
     "y": {
-      "aggregate": "sum","field": "Consumption"
+      "aggregate": "sum","field": "Consumption",
+      "title":"Meat Consumption"
     },
     "color": {
       "field": "Meat",
@@ -72,37 +77,44 @@
      },
      
    {
-     "hconcat":[{
+     "hconcat":[
+    {
    "data": {
-    "url": "https://raw.githubusercontent.com/Vherakaey/assignment2/main/barchart_meat.csv"
+      "url": "https://raw.githubusercontent.com/Vherakaey/assignment2/main/barchart_meat.csv"
   },
   "transform": [
           {"filter": {"selection": "click"}}
-          ]
-          ,
+          ],
+  "layer":[{
   "mark":"bar",
   "encoding": {
-  "x": {"field": "Category", "type": "nominal", "axis": {"labelAngle": 0},
-  "title":""
+    "x": {"field": "Category", 
+          "type": "nominal", 
+          "axis": {"labelAngle": 0},
+          "title":""
+          
   },
-    "y": {"field": "Value", "type": "quantitative",
-    "axis":null,
-    "scale": {"domain": [0, 55]}},
+    "y": {"field": "Value", 
+          "type":"quantitative",
+          "axis":{"title":null},
+          "scale": {"domain": [0, 55]}},
     
-    "tooltip": [
+          "tooltip": [
             {
               "field": "Category",
               "title": "Category"
             },
             {
               "field": "Value",
-              "title": "Ethnicity"
+              "title": "Emmissions (kgCO₂eq)"
             }
           ]
+        }
   }
-  }
-   ,
-      {
+  ]
+  
+  },
+  {
    "data": {
     "url": "https://raw.githubusercontent.com/Vherakaey/assignment2/main/eutrophying.csv"
   },
@@ -112,12 +124,15 @@
           ,
   "mark":"bar",
   "encoding": {
-  "x": {"field": "Category", "type": "nominal", "axis": {"labelAngle": 0},
+  "x": {"field": "Category", 
+        "type": "nominal", 
+        "axis": {"labelAngle": 0},
   "title":""
   },
-    "y": {"field": "Value", "type": "quantitative",
-    "axis":null,
-    "scale": {"domain": [0, 300]}},
+    "y": {"field": "Value", 
+          "type":"quantitative",
+          "axis":{"title":null},
+    "scale": {"domain": [0, 305]}},
     "tooltip": [
             {
               "field": "Category",
@@ -125,7 +140,7 @@
             },
             {
               "field": "Value",
-              "title": "Ethnicity"
+              "title": "Emissions (gPO₄eq)"
             }
           ]
   }
@@ -144,7 +159,7 @@
   "title":""
   },
     "y": {"field": "Value", "type": "quantitative",
-    "axis":null,
+    "axis":{"title":null},
     "scale": {"domain": [0, 3600]}},
     "tooltip": [
             {
@@ -153,7 +168,7 @@
             },
             {
               "field": "Value",
-              "title": "Ethnicity"
+              "title": "Water footprint (l)"
             }
           ]
           
@@ -161,7 +176,10 @@
    }
      ]
    }
-   ]
+   ],
+  "config": {"view": {"stroke": null},
+   "axis": {"grid": false}}
+   
+    }
   
-  
-}
+
