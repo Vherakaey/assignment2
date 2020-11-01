@@ -15,7 +15,7 @@
   "encoding": {
     "x": {"field": "Continent", 
           "type": "nominal",
-          "axis":{"title":null}
+          "axis":{"title":null,"labelAngle":-30}
           },
     "size":{"value":40},
     "color": {
