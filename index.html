@@ -48,42 +48,38 @@
 <div class="description2">
 A temperature anomaly is the difference from an average or baseline temperature. As we can observe, the global temperature anomaly has increased over the years. 
 </div>
-<div class="first-map">
+<div class="second-map">
   <div id="vis2" class="vis-container"></div>
 </div>
 
-<h4>Causes of Global Warming</h4>
-    <!-- pure grid group -->
-<div class="t1">
-      <div class="t4">
-        <div id="vis4" class="vis-container"></div>
-        </div>
-        <div class="t5">
-        <div class="description description-right">
+<div class="title2">
+  Causes of Global Warming
+</div>
 
-          <p>Carbon dioxide (Co2) is the primary greenhouse gas emitted through human activities. </p>
-        </div>
-      </div>
-    </div>
-    
-    <!-- end pure grid group -->
+<div class="fifth-map">
+  <div id="vis4" class="vis-container"></div>
+  <div id="vis7" class="vis-container"></div>
+</div>
 
-    <!-- pure grid group -->
-     <div class="t1">
-      <div class="t2">
-        <div class="description description-left">
+<div class="description4">
+  Carbon dioxide (Co2) is the primary greenhouse gas emitted through human activities.
+</div>
 
-          <p>
-When it comes to fighting global warming, trees have emerged as one of the most popular weapons.Forests help stabilise the climate. They regulate ecosystems, protect biodiversity, play an integral part in the carbon cycle, support livelihoods, and can help drive sustainable growth.To maximise the climate benefits of forests, we must keep <b>more forest landscapes intact, manage them more sustainably, and restore more of those landscapes which we have lost.</b> </p>
-        </div>
-      </div>
-      <div class="t3">
-        <div id="vis5" class="vis-container"></div>
-      </div>
-    </div>
+<div class="description5">
+When it comes to fighting global warming, trees have emerged as one of the most popular weapons.Forests help stabilise the climate. They regulate ecosystems, protect biodiversity, play an integral part in the carbon cycle, support livelihoods, and can help drive sustainable growth.To maximise the climate benefits of forests, we must keep <b>more forest landscapes intact, manage them more sustainably, and restore more of those landscapes which we have lost.</b>
+</div>
+
+<div class="third-map">
+  <div id="vis5" class="vis-container"></div>
+  <div id="vis6" class="fourth-map">
   </div>
-    <!-- end pure grid group -->
-  </body>
+</div>
+ <div class="description3">
+      some words writng here
+</div>
+    
+</div>
+</body>
 
     <script type="text/javascript">
       var map = "https://vherakaey.github.io/assignment2/dot_map.vg.json";
@@ -91,7 +87,7 @@ When it comes to fighting global warming, trees have emerged as one of the most 
       var bubbleChart = "https://vherakaey.github.io/assignment2/bubbleChart.vg.json";
       var box_plot = "https://vherakaey.github.io/assignment2/boxPlot.vg.json";
       var line_bar = "https://vherakaey.github.io/assignment2/area_bar_chart.vg.json";
-
+			var donut = "https://vherakaey.github.io/assignment2/donut.vg.json"
 
       vegaEmbed('#vis1', map, {
         "actions": false
@@ -118,6 +114,12 @@ When it comes to fighting global warming, trees have emerged as one of the most 
       }).catch(console.error);
       
       vegaEmbed('#vis6', line_bar, {
+        "actions": false
+      }).then(function(result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+      }).catch(console.error);
+      
+      vegaEmbed('#vis7', donut, {
         "actions": false
       }).then(function(result) {
         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
