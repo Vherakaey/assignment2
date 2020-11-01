@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
    "hconcat": [
      {
-  "width": 300, "height": 200,
+  "width": 200, "height": 150,
   "data": {"url": "https://raw.githubusercontent.com/Vherakaey/assignment2/main/protein.csv"},
   "selection": {
           "click": {
