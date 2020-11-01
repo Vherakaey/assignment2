@@ -1,6 +1,6 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "height": 200,
-  "width": 350,
+  "height": 250,
+  "width": 450,
   "background": "#f6f4f3",
   "title": "Global Temperature Anomalies",
   "data": {
@@ -12,7 +12,8 @@
         "type": "ordinal"},
     "x": {"field": "Year", 
         "type": "ordinal",
-        "axis": null
+        "axis":null
+       
         },
   "color": { "field": "Anomaly",
             "scale": {
@@ -22,7 +23,7 @@
   "tooltip": [
     {"field": "Year", "type": "quantitative"},
       {"field": "Month", "type": "nominal"},
-      {"field": "Anomaly", "type": "nominal"}
+      {"field": "Anomaly", "type": "nominal","title":"Anomaly (degree celcius)"}
       
     ]
   }
