@@ -32,12 +32,14 @@
     },
     "y": {
       "aggregate": "sum","field": "Consumption",
-      "title":"Meat Consumption"
+      "title":"Meat Consumption per capita"
     },
     "color": {
       "field": "Meat",
       "type": "nominal",
-      "scale": {"range": ["#234a9e", "#2174b1", "#2fa0c0", "#60c1bf", "#b7e3b5"]}
+      "scale": {"range": ["#01665e","#bf812d","#f6e8c3",
+  
+        "#80cdc1"]}
       
     },
     "tooltip": [
@@ -98,6 +100,7 @@
           "type":"quantitative",
           "axis":{"title":null},
           "scale": {"domain": [0, 55]}},
+          "color":{"value":"#92c5de"},
     
           "tooltip": [
             {
@@ -133,6 +136,7 @@
           "type":"quantitative",
           "axis":{"title":null},
     "scale": {"domain": [0, 305]}},
+    "color":{"value":"#92c5de"},
     "tooltip": [
             {
               "field": "Category",
@@ -161,6 +165,7 @@
     "y": {"field": "Value", "type": "quantitative",
     "axis":{"title":null},
     "scale": {"domain": [0, 3600]}},
+    "color":{"value":"#92c5de"},
     "tooltip": [
             {
               "field": "Category",
@@ -181,5 +186,3 @@
    "axis": {"grid": false}}
    
     }
-  
-
