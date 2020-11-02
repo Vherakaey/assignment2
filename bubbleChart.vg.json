@@ -3,7 +3,7 @@
   "width": 400, 
   "height": 300, 
  "background": "#f6f4f3",
-  "title": "Co2 Emmissions and Human Development Index per Country", 
+  "title": "Co2 Emissions and Human Development Index per Country", 
   "data": { "url": "https://raw.githubusercontent.com/Vherakaey/assignment2/main/bubbleChart.csv" }, 
 
   "params": [ { "name": "Continent_selection",
