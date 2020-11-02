@@ -1,9 +1,12 @@
 * CSS styles */
 
 
-.backgroundColor{
-  background-color: #f6f4f3 !important;
-}
+body{
+ background-color: lightblue !important;
+ }
+ .bg{
+   background-color: #f6f4f3;
+   }
 .topTitle{
   margin-top: 24px;
   margin-bottom: 8px;
