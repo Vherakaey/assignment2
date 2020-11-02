@@ -100,7 +100,7 @@
           "type":"quantitative",
           "axis":{"title":null},
           "scale": {"domain": [0, 55]}},
-          "color":{"value":"#92c5de"},
+          "color":{"value":"#dfc27d"},
     
           "tooltip": [
             {
@@ -136,7 +136,7 @@
           "type":"quantitative",
           "axis":{"title":null},
     "scale": {"domain": [0, 305]}},
-    "color":{"value":"#92c5de"},
+    "color":{"value":"#dfc27d"},
     "tooltip": [
             {
               "field": "Category",
@@ -165,7 +165,7 @@
     "y": {"field": "Value", "type": "quantitative",
     "axis":{"title":null},
     "scale": {"domain": [0, 3600]}},
-    "color":{"value":"#92c5de"},
+    "color":{"value":"#dfc27d"},
     "tooltip": [
             {
               "field": "Category",
